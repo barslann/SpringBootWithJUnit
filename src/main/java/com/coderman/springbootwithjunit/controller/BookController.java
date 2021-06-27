@@ -29,7 +29,7 @@ public class BookController {
         if(!bookService.checkBookAlreadyExist(book.getId())){
             bookService.addBook(book);
 
-            ResponseModel responseModel = new ResponseModel(book.getId(),"Succes. Book is added");
+            ResponseModel responseModel = new ResponseModel(book.getId(),"Success. Book is added");
 
             HttpHeaders headers = new HttpHeaders();
             headers.add("unique", book.getId());

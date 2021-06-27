@@ -1,0 +1,51 @@
+2021-06-27 13:00:49.345  INFO 6344 --- [main] c.c.s.controller.BookControllerTest      : Starting BookControllerTest using Java 11.0.10 on Bekirs-MacBook-Pro.local with PID 6344 (started by coderman in /Users/coderman/Desktop/springbootwithjunit)
+2021-06-27 13:00:49.355  INFO 6344 --- [main] c.c.s.controller.BookControllerTest      : No active profile set, falling back to default profiles: default
+2021-06-27 13:00:50.645  INFO 6344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-27 13:00:50.729  INFO 6344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interfaces.
+2021-06-27 13:00:52.326  INFO 6344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-27 13:00:52.378  INFO 6344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-27 13:00:52.414  INFO 6344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-27 13:00:52.517  INFO 6344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-27 13:00:53.026  INFO 6344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-27 13:00:53.053  INFO 6344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-27 13:00:53.928  INFO 6344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-27 13:00:53.942  INFO 6344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 13:00:54.397  WARN 6344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-27 13:00:55.806  INFO 6344 --- [main] c.c.s.controller.BookControllerTest      : Started BookControllerTest in 7.212 seconds (JVM running for 8.889)
+2021-06-27 13:00:55.923  INFO 6344 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 13:00:55.930  INFO 6344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-27 13:00:55.953  INFO 6344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-27 13:07:39.958  INFO 6383 --- [main] c.c.s.controller.BookControllerTest      : Starting BookControllerTest using Java 11.0.10 on Bekirs-MacBook-Pro.local with PID 6383 (started by coderman in /Users/coderman/Desktop/springbootwithjunit)
+2021-06-27 13:07:39.964  INFO 6383 --- [main] c.c.s.controller.BookControllerTest      : No active profile set, falling back to default profiles: default
+2021-06-27 13:07:41.238  INFO 6383 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-27 13:07:41.313  INFO 6383 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interfaces.
+2021-06-27 13:07:42.876  INFO 6383 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-27 13:07:42.927  INFO 6383 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-27 13:07:42.974  INFO 6383 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-27 13:07:43.074  INFO 6383 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-27 13:07:43.547  INFO 6383 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-27 13:07:43.572  INFO 6383 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-27 13:07:44.438  INFO 6383 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-27 13:07:44.465  INFO 6383 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 13:07:44.990  WARN 6383 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-27 13:07:46.638  INFO 6383 --- [main] c.c.s.controller.BookControllerTest      : Started BookControllerTest in 7.422 seconds (JVM running for 9.117)
+2021-06-27 13:07:46.985  INFO 6383 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 13:07:46.993  INFO 6383 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-27 13:07:47.023  INFO 6383 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-27 13:15:56.486  INFO 6416 --- [main] c.c.s.controller.BookControllerTest      : Starting BookControllerTest using Java 11.0.10 on Bekirs-MacBook-Pro.local with PID 6416 (started by coderman in /Users/coderman/Desktop/springbootwithjunit)
+2021-06-27 13:15:56.493  INFO 6416 --- [main] c.c.s.controller.BookControllerTest      : No active profile set, falling back to default profiles: default
+2021-06-27 13:15:57.930  INFO 6416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-27 13:15:58.004  INFO 6416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
+2021-06-27 13:15:59.527  INFO 6416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-27 13:15:59.594  INFO 6416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-27 13:15:59.636  INFO 6416 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-27 13:15:59.735  INFO 6416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-27 13:16:00.250  INFO 6416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-27 13:16:00.277  INFO 6416 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-27 13:16:01.026  INFO 6416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-27 13:16:01.046  INFO 6416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 13:16:01.577  WARN 6416 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-27 13:16:02.954  INFO 6416 --- [main] c.c.s.controller.BookControllerTest      : Started BookControllerTest in 7.332 seconds (JVM running for 9.026)
+2021-06-27 13:16:03.152  INFO 6416 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 13:16:03.158  INFO 6416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-27 13:16:03.184  INFO 6416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
