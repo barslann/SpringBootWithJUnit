@@ -28,3 +28,11 @@ public class Book {
     private int aisle;
 
 }
+
+/*
+* @JsonInclude(Include.NON_NULL)
+*
+* By annotating each field with @JsonInclude(Include.NON_NULL) annotation,
+*            it will be not included in the JSON output if its null.
+*
+* */

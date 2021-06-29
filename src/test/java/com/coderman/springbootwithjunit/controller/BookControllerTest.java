@@ -16,6 +16,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
+import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +24,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.hamcrest.CoreMatchers.*;
 import static org.mockito.Mockito.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -102,13 +104,66 @@ public class BookControllerTest {
 
         resultActions.andExpect(jsonPath("$.[0].id").value("abc123"));
 
+    }
+
+    @SneakyThrows
+    @Test
+    public void updateBookTest(){
+        Book book = buildABook();
+        when(bookService.updateBook(any(),any())).thenReturn(updateABook());
+        String bookJsonString = new ObjectMapper().writeValueAsString(updateABook());
+
+
+        ResultActions resultActions = this.mockMvc.perform(put("/api/updateBook/" + book.getId())
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(bookJsonString));
+
+        resultActions.andDo(print());
+
+        resultActions.andExpect(status().isOk());
+
+        //this is going to be fail because updateABook() method create new book will new id.
+        // but put request wont change the id.
+//        resultActions.andExpect(content().json(bookJsonString));
+
+        //this will work
+        resultActions.andExpect(content().json("{\"id\":\"abc123\",\"bookName\":\"React\",\"isbn\":\"abc\",\"author\":\"coderman\",\"aisle\":123}"));
+//        resultActions.andExpect(jsonPath("$.bookName").value(book.getBookName()));
+    }
+
+    @SneakyThrows
+    @Test
+    public void deleteBookControllerTest(){
+        Book book = buildABook();
+        doNothing().when(bookService).deleteBook(book.getId());
+        ResultActions resultActions = this.mockMvc.
+                perform(delete("/api/deleteBook")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"id\":\"abc123\"}"))
+                .andDo(print());
+
+        resultActions.andExpect(status().isAccepted());
+
+        resultActions.andExpect(content().string("Book is deleted"));
 
     }
+
+
 
     private Book buildABook(){
         Book book = new Book();
         book.setId("abc123");
         book.setBookName("Spring");
+        book.setAisle(123);
+        book.setIsbn("abc");
+        book.setAuthor("coderman");
+        return book;
+    }
+
+    private Book updateABook(){
+        Book book = new Book();
+        book.setId("abc123");
+        book.setBookName("React");
         book.setAisle(123);
         book.setIsbn("abc");
         book.setAuthor("coderman");
