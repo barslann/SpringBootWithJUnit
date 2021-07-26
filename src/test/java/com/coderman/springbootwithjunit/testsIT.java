@@ -1,9 +1,7 @@
 package com.coderman.springbootwithjunit;
 
 import com.coderman.springbootwithjunit.entity.Book;
-import org.apache.tomcat.jni.Library;
 import org.json.JSONException;
-import org.junit.Assert;
 import org.junit.jupiter.api.*;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.boot.test.context.SpringBootTest;
